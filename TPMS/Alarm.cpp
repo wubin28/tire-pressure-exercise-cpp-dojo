@@ -20,6 +20,7 @@ bool Alarm::isAlarmOn() {
 }
 
 Alarm::Alarm() {
+  // TODO: Depending on a concrete Sensor violates the Dependency Inversion Principle and Open-Closed Principle
   sensor = new Sensor;
   alarmOn = false;
 }

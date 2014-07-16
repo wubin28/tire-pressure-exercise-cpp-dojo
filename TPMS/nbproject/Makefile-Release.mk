@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Alarm.o \
+	${OBJECTDIR}/AlarmTest.o \
 	${OBJECTDIR}/Sensor.o
 
 
@@ -67,6 +68,11 @@ ${OBJECTDIR}/Alarm.o: Alarm.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Alarm.o Alarm.cpp
+
+${OBJECTDIR}/AlarmTest.o: AlarmTest.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/AlarmTest.o AlarmTest.cpp
 
 ${OBJECTDIR}/Sensor.o: Sensor.cpp 
 	${MKDIR} -p ${OBJECTDIR}

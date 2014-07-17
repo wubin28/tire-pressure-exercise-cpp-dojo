@@ -9,8 +9,9 @@
 #define	SENSOR_H
 
 #include <random>
+#include "Transducer.h"
 
-class Sensor {
+class Sensor : public Transducer {
 public:
   static const double OFFSET;
   double popNextPressurePsiValue();

@@ -71,7 +71,7 @@ gtest_main.a : gtest-all.o gtest_main.o
 # gtest_main.a, depending on whether it defines its own main()
 # function.
 
-Sensor.o : $(USER_DIR)/Sensor.cpp $(USER_DIR)/Sensor.h $(GTEST_HEADERS)
+Sensor.o : $(USER_DIR)/Sensor.cpp $(USER_DIR)/Sensor.h $(USER_DIR)/Transducer.h $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c -std=c++11 $(USER_DIR)/Sensor.cpp
 
 StubSensor.o : $(USER_DIR)/StubSensor.cpp $(USER_DIR)/StubSensor.h $(GTEST_HEADERS)

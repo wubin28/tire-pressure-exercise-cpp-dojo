@@ -18,6 +18,7 @@ public:
 private:
   double nextPressureValue;
   double pressureValues[2] = {0, 0};
+  int pressureValueIndex = 0;
 };
 
 #endif	/* STUBSENSOR_H */

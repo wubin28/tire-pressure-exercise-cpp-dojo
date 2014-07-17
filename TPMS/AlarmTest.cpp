@@ -28,7 +28,6 @@ TEST(AlarmTest, a_pressure_value_outside_the_range_should_raise_the_alarm) {
   EXPECT_TRUE(alarm->isAlarmOn());
 }
 
-// TODO-new-intent-working-on: a normal pressure value after a value outside the range should stop the alarm
 TEST(AlarmTest, a_normal_pressure_value_after_a_value_outside_the_range_should_stop_the_alarm) {
   // Arrange
   StubSensor *stubSensor = new StubSensor;

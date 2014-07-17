@@ -8,7 +8,7 @@
 #include "StubSensor.h"
 
 void StubSensor::arrangeNextPressureValue(double nextPressureValue) {
-  this->nextPressureValue = nextPressureValue;
+  this->pressureValues[0] = nextPressureValue;
 }
 
 void StubSensor::arrangeNextTwoPressureValues(double outOfRangePressureValue, double normalPressureValue) {
@@ -17,7 +17,7 @@ void StubSensor::arrangeNextTwoPressureValues(double outOfRangePressureValue, do
 }
 
 double StubSensor::popNextPressurePsiValue() {
-  return this->nextPressureValue;
+  return this->pressureValues[pressureValueIndex++];
 }
 
 

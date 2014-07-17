@@ -4,4 +4,18 @@
         <activeConfTypeElem>1</activeConfTypeElem>
         <activeConfIndexElem>0</activeConfIndexElem>
     </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/StubSensor.h</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/Alarm.cpp</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/Alarm.h</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/AlarmTest.cpp</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/Makefile</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/StubSensor.cpp</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/Transducer.h</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/Sensor.cpp</file>
+            <file>file:/home/benwu/OOR/katas/remote/tire-pressure-exercise-cpp-dojo/TPMS/Sensor.h</file>
+        </group>
+    </open-files>
 </project-private>

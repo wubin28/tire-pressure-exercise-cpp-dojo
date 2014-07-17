@@ -11,4 +11,9 @@ void StubSensor::arrangeNextPressureValue(double nextPressureValue) {
   this->nextPressureValue = nextPressureValue;
 }
 
+double StubSensor::popNextPressurePsiValue() {
+  return this->nextPressureValue;
+}
+
+
 double nextPressureValue = 0;

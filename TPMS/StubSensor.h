@@ -13,6 +13,7 @@
 class StubSensor : public Transducer {
 public:
   void arrangeNextPressureValue(double nextPressureValue);
+  double popNextPressurePsiValue() override;
 private:
   double nextPressureValue;
 };

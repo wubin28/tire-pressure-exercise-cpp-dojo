@@ -15,8 +15,15 @@ TEST(AlarmTest, a_normal_pressure_value_should_not_raise_the_alarm) {
   EXPECT_FALSE(alarm->isAlarmOn());
 }
 
-// TODO-intent-working-on: a pressure value outside the range should raise the alarm
 TEST(AlarmTest, a_pressure_value_outside_the_range_should_raise_the_alarm) {
+  // Arrange
+  StubSensor *stubSensor = new StubSensor;
+  stubSensor->arrangeNextPressureValue(Alarm::LOW_PRESSURE_THRESHOLD - 1);
+  Alarm *alarm = new Alarm(stubSensor);
+  
+  // Act
+  alarm->check();
+  
   // Assert
   EXPECT_TRUE(alarm->isAlarmOn());
 }

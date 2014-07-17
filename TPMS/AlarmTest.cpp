@@ -2,7 +2,6 @@
 #include "StubSensor.h"
 #include "Alarm.h"
  
-// TODO-intent-working-on: a normal pressure value should not raise the alarm
 TEST(AlarmTest, a_normal_pressure_value_should_not_raise_the_alarm) {
   // Arrange
   StubSensor *stubSensor = new StubSensor;

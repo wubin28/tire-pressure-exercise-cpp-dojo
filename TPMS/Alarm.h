@@ -22,6 +22,7 @@ public:
 private:
   Sensor* sensor;
   bool alarmOn;
+  Transducer *transducer;
 };
 
 #endif  /* ALARM_H */

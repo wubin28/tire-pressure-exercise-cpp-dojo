@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "StubSensor.h"
  
 // TODO-intent: a normal pressure value should not raise the alarm
 TEST(AlarmTest, a_normal_pressure_value_should_not_raise_the_alarm) {

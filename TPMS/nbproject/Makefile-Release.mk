@@ -37,7 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Alarm.o \
 	${OBJECTDIR}/AlarmTest.o \
-	${OBJECTDIR}/Sensor.o
+	${OBJECTDIR}/Sensor.o \
+	${OBJECTDIR}/StubSensor.o
 
 
 # C Compiler Flags
@@ -78,6 +79,11 @@ ${OBJECTDIR}/Sensor.o: Sensor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sensor.o Sensor.cpp
+
+${OBJECTDIR}/StubSensor.o: StubSensor.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StubSensor.o StubSensor.cpp
 
 # Subprojects
 .build-subprojects:

@@ -10,7 +10,7 @@
 void Alarm::check() {
   double psiPressureValue = sensor->popNextPressurePsiValue();
 
-  if (psiPressureValue < LowPressureThreshold || HighPressureThreshold < psiPressureValue) {
+  if (psiPressureValue < LOW_PRESSURE_THRESHOLD || HIGH_PRESSURE_THRESHOLD < psiPressureValue) {
     alarmOn = true;
   }
 }
@@ -25,5 +25,5 @@ Alarm::Alarm() {
   alarmOn = false;
 }
 
-const double Alarm::LowPressureThreshold = 17;
-const double Alarm::HighPressureThreshold = 21;
+const double Alarm::LOW_PRESSURE_THRESHOLD = 17;
+const double Alarm::HIGH_PRESSURE_THRESHOLD = 21;

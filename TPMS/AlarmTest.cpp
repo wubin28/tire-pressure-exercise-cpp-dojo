@@ -28,4 +28,4 @@ TEST(AlarmTest, a_pressure_value_outside_the_range_should_raise_the_alarm) {
   EXPECT_TRUE(alarm->isAlarmOn());
 }
 
-// TODO-new-intent: a normal pressure value after a value outside the range should stop the alarm
+// TODO-new-intent-working-on: a normal pressure value after a value outside the range should stop the alarm

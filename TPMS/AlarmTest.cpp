@@ -32,7 +32,7 @@ TEST(AlarmTest, a_pressure_value_outside_the_range_should_raise_the_alarm) {
 TEST(AlarmTest, a_normal_pressure_value_after_a_value_outside_the_range_should_stop_the_alarm) {
   // Arrange
   StubSensor *stubSensor = new StubSensor;
-  stubSensor-arrangeNextTwoPressureValues(Alarm::HIGH_PRESSURE_THRESHOLD + 1, Alarm::HIGH_PRESSURE_THRESHOLD);
+  stubSensor->arrangeNextTwoPressureValues(Alarm::HIGH_PRESSURE_THRESHOLD + 1, Alarm::HIGH_PRESSURE_THRESHOLD);
   Alarm *alarm = new Alarm(stubSensor);
   
   // Act

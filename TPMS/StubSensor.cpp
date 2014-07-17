@@ -7,3 +7,8 @@
 
 #include "StubSensor.h"
 
+void StubSensor::arrangeNextPressureValue(double nextPressureValue) {
+  this->nextPressureValue = nextPressureValue;
+}
+
+double nextPressureValue = 0;

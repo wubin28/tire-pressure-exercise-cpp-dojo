@@ -8,7 +8,9 @@
 #ifndef STUBSENSOR_H
 #define	STUBSENSOR_H
 
-class StubSensor {
+#include "Transducer.h"
+
+class StubSensor : public Transducer {
 public:
     void arrangeNextPressureValue(double nextPressureValue);
 private:

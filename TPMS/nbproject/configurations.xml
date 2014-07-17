@@ -7,6 +7,7 @@
       <itemPath>Alarm.h</itemPath>
       <itemPath>Sensor.h</itemPath>
       <itemPath>StubSensor.h</itemPath>
+      <itemPath>Transducer.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -56,6 +57,8 @@
       </item>
       <item path="StubSensor.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Transducer.h" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -90,6 +93,8 @@
       <item path="StubSensor.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="StubSensor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Transducer.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

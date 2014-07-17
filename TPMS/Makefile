@@ -74,10 +74,14 @@ gtest_main.a : gtest-all.o gtest_main.o
 Sensor.o : $(USER_DIR)/Sensor.cpp $(USER_DIR)/Sensor.h $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c -std=c++11 $(USER_DIR)/Sensor.cpp
 
+StubSensor.o : $(USER_DIR)/StubSensor.cpp $(USER_DIR)/StubSensor.h $(GTEST_HEADERS)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c -std=c++11 $(USER_DIR)/StubSensor.cpp
+
 Alarm.o : $(USER_DIR)/Alarm.cpp $(USER_DIR)/Alarm.h $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c -std=c++11 $(USER_DIR)/Alarm.cpp
 
-AlarmTest.o : $(USER_DIR)/AlarmTest.cpp $(GTEST_HEADERS)
+AlarmTest.o : $(USER_DIR)/AlarmTest.cpp $(USER_DIR)/Alarm.h \
+	$(USER_DIR)/StubSensor.h $(GTEST_HEADERS)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c -std=c++11 $(USER_DIR)/AlarmTest.cpp
 
 AlarmTest: Sensor.o Alarm.o AlarmTest.o gtest_main.a

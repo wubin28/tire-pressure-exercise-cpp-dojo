@@ -6,6 +6,7 @@
  */
 
 #include "Alarm.h"
+#include "Transducer.h"
 
 void Alarm::check() {
   double psiPressureValue = sensor->popNextPressurePsiValue();
@@ -23,6 +24,10 @@ Alarm::Alarm() {
   // TODO: Depending on a concrete Sensor violates the Dependency Inversion Principle and Open-Closed Principle
   sensor = new Sensor;
   alarmOn = false;
+}
+
+Alarm::Alarm(Transducer *transducer) {
+  
 }
 
 const double Alarm::LOW_PRESSURE_THRESHOLD = 17;
